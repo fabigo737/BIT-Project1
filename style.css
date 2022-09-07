@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+  max-width: 80%;
+  padding-left: 20%;
+
+}
+
+.grid-container>* {
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  grid-area: header;
+  text-align: left;
+}
+
+.header img {
+  padding-top: 18px;
+  padding-left: 5px;
+  width: 220px;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: block;
+}
+
+ul {
+  margin-top: 20px;
+  list-style-type: none;
+  text-align: left;
+}
+
+ul li {
+  display: inline-block;
+
+}
+
+li a {
+  text-decoration: none;
+  color: #02407d;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+#selected {
+  background-color: #bfd9e4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  color: black;
+}
+
+.sociales {
+  grid-area: sociales;
+  text-align: right;
+  font-size: 40px;
+}
+
+.sociales i {
+  padding: 15px;
+}
+
+.sociales i:hover {
+  cursor: pointer;
+}
+
+.main {
+  grid-area: main;
+}
+
+.welcomeimagen img {
+  width: 100%;
+}
+
+h2 {
+  color: #013871;
+}
+
+.banks img {
+  width: 350px;
+  padding: 15px;
+}
+
+#mejorar {
+  text-align: center;
+  align-items: center;
+}
+
+.invitacion img {
+  width: 100%;
+}
+
+.invitacionblock img {
+  padding: 10px;
+}
+
+select,
+option,
+input {
+  width: 520px;
+  height: 30px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8c96a0;
+}
+
+.buscarpeludo-left {
+  grid-area: buscarpeludo-left;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.buscarpeludo-right {
+  grid-area: buscarpeludo-right;
+  text-align: left;
+  margin-left: -10px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header sociales sociales" 100px
+    "header navbar navbar" 100px
+    "main main main" 1000px/
+    250px;
+}
+
+.findpeludos {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "buscarpeludo-left buscarpeludo-right";
+  margin-bottom: 30px;
+}
+
+.fotospeludos {
+  display: block;
+}
+
+.blockinfopet {
+  display: inline-block;
+  padding: 20px;
+}
+
+.blockinfopet img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+
+}
+
+.blockinfopet h2 {
+  font-size: 30px;
+  color: #656565;
+}
+
+.blockinfopet a {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+img:hover {
+  cursor: pointer;
+}
